@@ -1,0 +1,16 @@
+{
+    "database": {
+        "connectionString": "mongodb://192.168.10.96:27017/samba"
+    },
+    "server": {
+        "port": 5000,
+        "jwtSecret": "random-secret-password",
+        "jwtExpiration": "1h",
+        "routePrefix": "/api",
+        "plugins": [
+            "logger",
+            "jwt-auth",
+            "swagger"
+        ]
+    }
+}
